@@ -1,0 +1,5 @@
+#REPLACE FILE1 Termek
+#REPLACE Termek.Recnum |FN1,0
+#REPLACE Termek.termek_azonosito |FN1,1
+#REPLACE Termek.termek_megnevezes |FS1,2
+#REPLACE Termek.termek_egysegar |FN1,3

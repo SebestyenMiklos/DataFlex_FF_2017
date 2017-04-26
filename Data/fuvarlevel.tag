@@ -1,0 +1,7 @@
+fuvarl_azonosito
+fuvarl_auto_azonosito
+fuvarl_sofor_azonosito
+fuvarl_munkaido_menyiseg
+fuvarl_datum
+fuvarl_uzemanyag_mennyiseg
+fuvarl_uzemanyag_egysegar

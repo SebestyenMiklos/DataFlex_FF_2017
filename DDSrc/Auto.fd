@@ -1,0 +1,4 @@
+#REPLACE FILE3 Auto
+#REPLACE Auto.Recnum |FN3,0
+#REPLACE Auto.auto_rendszam |FS3,1
+#REPLACE Auto.auto_tipus |FS3,2

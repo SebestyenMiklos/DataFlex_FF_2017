@@ -1,0 +1,5 @@
+#REPLACE FILE2 Sofor
+#REPLACE Sofor.Recnum |FN2,0
+#REPLACE Sofor.sofor_azonosito |FN2,1
+#REPLACE Sofor.sofor_nev |FS2,2
+#REPLACE Sofor.sofor_szigsz |FS2,3

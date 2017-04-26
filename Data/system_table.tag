@@ -1,0 +1,3 @@
+termek_azonosito
+sofor_azonosito
+fuvarl_azonosito

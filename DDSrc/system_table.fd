@@ -1,0 +1,5 @@
+#REPLACE FILE6 system_table
+#REPLACE system_table.Recnum |FN6,0
+#REPLACE system_table.termek_azonosito |FN6,1
+#REPLACE system_table.sofor_azonosito |FN6,2
+#REPLACE system_table.fuvarl_azonosito |FN6,3

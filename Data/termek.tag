@@ -1,0 +1,3 @@
+termek_azonosito
+termek_megnevezes
+termek_egysegar

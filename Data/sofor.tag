@@ -1,0 +1,3 @@
+sofor_azonosito
+sofor_nev
+sofor_szigsz

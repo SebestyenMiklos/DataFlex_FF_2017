@@ -1,0 +1,27 @@
+Use DataDict.pkg
+
+Open Sofor
+Open Fuvarlevel
+Open system_table
+
+Class cSoforDataDictionary is a DataDictionary
+    
+    Procedure Construct_Object
+        Forward Send Construct_Object
+        Set Main_File to Sofor.File_Number
+
+        Set Add_System_File to system_table.File_Number DD_Lock_On_All
+
+        Set Add_Server_File to Fuvarlevel.File_Number
+
+        Set Foreign_Field_Option DD_KEYFIELD DD_NOPUT to True
+        Set Foreign_Field_Option DD_KEYFIELD DD_FINDREQ to True
+        Set Foreign_Field_Option DD_INDEXFIELD DD_NOPUT to True
+        Set Foreign_Field_Option DD_DEFAULT DD_DISPLAYONLY to True
+
+        Set Field_Option Field Sofor.sofor_azonosito DD_AUTOFIND to True
+        Set Field_Auto_Increment Field Sofor.sofor_azonosito to File_Field system_table.sofor_azonosito
+
+    End_Procedure
+
+End_Class

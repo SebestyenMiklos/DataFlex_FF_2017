@@ -1,0 +1,9 @@
+#REPLACE FILE4 Fuvarlevel
+#REPLACE Fuvarlevel.Recnum |FN4,0
+#REPLACE Fuvarlevel.fuvarl_azonosito |FN4,1
+#REPLACE Fuvarlevel.fuvarl_auto_azonosito |FS4,2
+#REPLACE Fuvarlevel.fuvarl_sofor_azonosito |FN4,3
+#REPLACE Fuvarlevel.fuvarl_munkaido_menyiseg |FN4,4
+#REPLACE Fuvarlevel.fuvarl_datum |FD4,5
+#REPLACE Fuvarlevel.fuvarl_uzemanyag_mennyiseg |FN4,6
+#REPLACE Fuvarlevel.fuvarl_uzemanyag_egysegar |FS4,7

@@ -1,0 +1,31 @@
+Use DataDict.pkg
+
+Open Fuvarlevel
+Open FuvarlevelTetel
+Open Sofor
+Open Auto
+Open system_table
+
+Class cFuvarlevelDataDictionary is a DataDictionary
+    
+    Procedure Construct_Object
+        Forward Send Construct_Object
+        Set Main_File to Fuvarlevel.File_Number
+
+        Set Add_System_File to system_table.File_Number DD_Lock_On_All
+
+        Set Add_Client_File to FuvarlevelTetel.File_Number
+        Set Add_Client_File to Sofor.File_Number
+        Set Add_Client_File to Auto.File_Number
+
+        Set Foreign_Field_Option DD_KEYFIELD DD_NOPUT to True
+        Set Foreign_Field_Option DD_KEYFIELD DD_FINDREQ to True
+        Set Foreign_Field_Option DD_INDEXFIELD DD_NOPUT to True
+        Set Foreign_Field_Option DD_DEFAULT DD_DISPLAYONLY to True
+
+        Set Field_Auto_Increment Field Fuvarlevel.fuvarl_azonosito to File_Field system_table.fuvarl_azonosito
+        Set Field_Option Field Fuvarlevel.fuvarl_azonosito DD_AUTOFIND to True
+
+    End_Procedure
+
+End_Class
