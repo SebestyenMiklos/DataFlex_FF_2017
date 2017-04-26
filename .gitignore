@@ -1,2 +1,3 @@
-IdeSrc/I331205_FindInFiles.dsk
-IdeSrc/I331205_Studio.dsk
+IdeSrc/*.dsk
+IdeSrc/*.dsk
+*.dsk

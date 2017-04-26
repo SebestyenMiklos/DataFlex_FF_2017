@@ -4,10 +4,10 @@ Active=0
 SubDirectories=1
 WholeWordOnly=0
 SearchWhere=0
-Location=C:\DataFlex Projects\FF_DataFlex_2017\IdeSrc\I331205_FindInFiles.dsk
-[C:\DataFlex Projects\FF_DataFlex_2017\AppSrc]
+Location=C:\DataFlex Projects\DataFlex_FF_2017\IdeSrc\I331205_FindInFiles.dsk
+[C:\DataFlex Projects\DataFlex_FF_2017\AppSrc]
 IsEnabled=1
-[C:\DataFlex Projects\FF_DataFlex_2017\DDSrc]
+[C:\DataFlex Projects\DataFlex_FF_2017\DDSrc]
 IsEnabled=1
-[C:\DataFlex Projects\FF_DataFlex_2017\AppHtml]
+[C:\DataFlex Projects\DataFlex_FF_2017\AppHtml]
 IsEnabled=1
