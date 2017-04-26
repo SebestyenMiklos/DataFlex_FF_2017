@@ -12,8 +12,6 @@ Class cTermekDataDictionary is a DataDictionary
 
         Set Add_System_File to system_table.File_Number DD_Lock_On_All
 
-        Set Add_Server_File to FuvarlevelTetel.File_Number
-
         Set Foreign_Field_Option DD_KEYFIELD DD_NOPUT to True
         Set Foreign_Field_Option DD_KEYFIELD DD_FINDREQ to True
         Set Foreign_Field_Option DD_INDEXFIELD DD_NOPUT to True
@@ -21,6 +19,13 @@ Class cTermekDataDictionary is a DataDictionary
 
         Set Field_Option Field Termek.termek_azonosito DD_AUTOFIND to True
         Set Field_Auto_Increment Field Termek.termek_azonosito to File_Field system_table.termek_azonosito
+        Set Key_Field_State Field Termek.termek_azonosito to True
+
+        Set Field_Label_Long Field Termek.termek_megnevezes to "N‚v"
+        Set Field_Label_Short Field Termek.termek_megnevezes to "N‚v"
+
+        Set Field_Label_Long Field Termek.termek_egysegar to "Egys‚g r (Ft)"
+        Set Field_Label_Short Field Termek.termek_egysegar to "µr (Ft)"
 
     End_Procedure
 

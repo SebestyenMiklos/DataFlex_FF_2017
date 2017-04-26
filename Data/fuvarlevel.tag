@@ -1,5 +1,5 @@
 fuvarl_azonosito
-fuvarl_auto_azonosito
+fuvarl_auto_rendszam
 fuvarl_sofor_azonosito
 fuvarl_munkaido_menyiseg
 fuvarl_datum

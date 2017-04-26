@@ -9,7 +9,7 @@ Class cAutoDataDictionary is a DataDictionary
         Forward Send Construct_Object
         Set Main_File to Auto.File_Number
 
-        Set Add_Server_File to Fuvarlevel.File_Number
+        Set Add_Client_File to Fuvarlevel.File_Number
 
         Set Foreign_Field_Option DD_KEYFIELD DD_NOPUT to True
         Set Foreign_Field_Option DD_KEYFIELD DD_FINDREQ to True
@@ -17,7 +17,8 @@ Class cAutoDataDictionary is a DataDictionary
         Set Foreign_Field_Option DD_DEFAULT DD_DISPLAYONLY to True
 
         Set Field_Option Field Auto.auto_rendszam DD_AUTOFIND to True
-        Set Field_Mask Field Auto.auto_rendszam to "###-###"
+        Set Field_Mask Field Auto.auto_rendszam to "@@@-###"
+        Set Key_Field_State Field Auto.auto_rendszam to True
 
     End_Procedure
 

@@ -10,9 +10,9 @@ Class cSoforDataDictionary is a DataDictionary
         Forward Send Construct_Object
         Set Main_File to Sofor.File_Number
 
-        Set Add_System_File to system_table.File_Number DD_Lock_On_All
+        Set Add_Client_File to Fuvarlevel.File_Number
 
-        Set Add_Server_File to Fuvarlevel.File_Number
+        Set Add_System_File to system_table.File_Number DD_Lock_On_All
 
         Set Foreign_Field_Option DD_KEYFIELD DD_NOPUT to True
         Set Foreign_Field_Option DD_KEYFIELD DD_FINDREQ to True
@@ -21,6 +21,10 @@ Class cSoforDataDictionary is a DataDictionary
 
         Set Field_Option Field Sofor.sofor_azonosito DD_AUTOFIND to True
         Set Field_Auto_Increment Field Sofor.sofor_azonosito to File_Field system_table.sofor_azonosito
+        Set Key_Field_State Field Sofor.sofor_azonosito to True
+
+        Set Field_Label_Long Field Sofor.sofor_nev to "Sof‹r neve"
+        Set Field_Label_Short Field Sofor.sofor_nev to "N‚v"
 
     End_Procedure
 

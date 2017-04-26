@@ -3,3 +3,4 @@
 #REPLACE FuvarlevelTetel.fuvarl_tetel_azonosito |FN5,1
 #REPLACE FuvarlevelTetel.fuvarl_tetel_fuvarl_azonosito |FN5,2
 #REPLACE FuvarlevelTetel.fuvarl_tetel_termek_azonosito |FN5,3
+#REPLACE FuvarlevelTetel.fuvarl_tetel_termek_mennyiseg |FN5,4

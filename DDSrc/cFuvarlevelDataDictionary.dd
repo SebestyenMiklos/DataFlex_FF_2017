@@ -12,11 +12,12 @@ Class cFuvarlevelDataDictionary is a DataDictionary
         Forward Send Construct_Object
         Set Main_File to Fuvarlevel.File_Number
 
+        Set Add_Server_File to Auto.File_Number
+        Set Add_Server_File to Sofor.File_Number
+
         Set Add_System_File to system_table.File_Number DD_Lock_On_All
 
         Set Add_Client_File to FuvarlevelTetel.File_Number
-        Set Add_Client_File to Sofor.File_Number
-        Set Add_Client_File to Auto.File_Number
 
         Set Foreign_Field_Option DD_KEYFIELD DD_NOPUT to True
         Set Foreign_Field_Option DD_KEYFIELD DD_FINDREQ to True
@@ -25,6 +26,7 @@ Class cFuvarlevelDataDictionary is a DataDictionary
 
         Set Field_Auto_Increment Field Fuvarlevel.fuvarl_azonosito to File_Field system_table.fuvarl_azonosito
         Set Field_Option Field Fuvarlevel.fuvarl_azonosito DD_AUTOFIND to True
+        Set Key_Field_State Field Fuvarlevel.fuvarl_azonosito to True
 
     End_Procedure
 

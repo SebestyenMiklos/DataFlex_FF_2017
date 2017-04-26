@@ -16,6 +16,15 @@ Class cFuvarlevelTetelDataDictionary is a DataDictionary
         Set Foreign_Field_Option DD_INDEXFIELD DD_NOPUT to True
         Set Foreign_Field_Option DD_DEFAULT DD_DISPLAYONLY to True
 
+        Set Field_Label_Long Field FuvarlevelTetel.fuvarl_tetel_fuvarl_azonosito to "Fuvarlev‚l"
+        Set Field_Label_Short Field FuvarlevelTetel.fuvarl_tetel_fuvarl_azonosito to "Fuvarl."
+
+        Set Field_Label_Long Field FuvarlevelTetel.fuvarl_tetel_termek_azonosito to "Term‚k"
+        Set Field_Label_Short Field FuvarlevelTetel.fuvarl_tetel_termek_azonosito to "Term‚k"
+
+        Set Field_Label_Long Field FuvarlevelTetel.fuvarl_tetel_termek_mennyiseg to "Mennyis‚g"
+        Set Field_Label_Short Field FuvarlevelTetel.fuvarl_tetel_termek_mennyiseg to "Mennyis‚g"
+
     End_Procedure
 
 End_Class

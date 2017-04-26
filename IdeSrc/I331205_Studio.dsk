@@ -1,16 +1,16 @@
 [Workspace]
 CurrentProject=SzallitmanyozoCeg.src
 Location=C:\DataFlex Projects\DataFlex_FF_2017\IdeSrc\I331205_Studio.dsk
-CreateNew=-1
+CreateNew=1
 [TabWindows]
 GroupCount=1
 HorizontalGroups=1
 [TabGroup0]
 GroupSize=40
-SelectedTab=4
+SelectedTab=7
 [Window0]
-Filename=Workspace Dashboard
-ViewType=101
+Filename=C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\SoforEntry.vw
+ViewType=2
 Top=29
 Left=4
 Bottom=730
@@ -18,24 +18,22 @@ Right=1187
 TabIndex=0
 TabGroup=0
 [Window1]
-Filename=C:\DataFlex Projects\DataFlex_FF_2017\DDSrc\cAutoDataDictionary.dd
-ViewType=1
+Filename=C:\DataFlex Projects\DataFlex_FF_2017\DDSrc\cFuvarlevelTetelDataDictionary.dd
+ViewType=3
 Top=29
 Left=4
 Bottom=730
 Right=1187
-CursorLine=0
-CursorColumn=0
-TabIndex=2
+TabIndex=5
 TabGroup=0
 [Window2]
-Filename=Auto
+Filename=FuvarlevelTetel
 ViewType=4
 Top=29
 Left=4
 Bottom=730
 Right=1187
-TabIndex=1
+TabIndex=4
 TabGroup=0
 [Window3]
 Filename=Fuvarlevel
@@ -44,14 +42,41 @@ Top=29
 Left=4
 Bottom=730
 Right=1187
-TabIndex=3
+TabIndex=6
 TabGroup=0
 [Window4]
-Filename=system_table
+Filename=Termek
 ViewType=4
 Top=29
 Left=4
 Bottom=730
 Right=1187
-TabIndex=4
+TabIndex=1
+TabGroup=0
+[Window5]
+Filename=C:\DataFlex Projects\DataFlex_FF_2017\DDSrc\cSoforDataDictionary.dd
+ViewType=3
+Top=29
+Left=4
+Bottom=730
+Right=1187
+TabIndex=3
+TabGroup=0
+[Window6]
+Filename=C:\DataFlex Projects\DataFlex_FF_2017\DDSrc\cTermekDataDictionary.dd
+ViewType=3
+Top=29
+Left=4
+Bottom=730
+Right=1187
+TabIndex=2
+TabGroup=0
+[Window7]
+Filename=C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\TermekEntry.vw
+ViewType=2
+Top=29
+Left=4
+Bottom=730
+Right=1187
+TabIndex=7
 TabGroup=0

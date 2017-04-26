@@ -16,7 +16,7 @@ Use oEditContextMenu.pkg
 Use oDEOEditContextMenu17.pkg
 
 Object oMain is a Panel
-    Set Label To "My Project"
+    Set Label to "Fuvaroz s management"
     Set Location to 4 3
     Set Size to 300 450
 
@@ -87,10 +87,43 @@ Object oMain is a Panel
             End_Object
 
             Object oViewMenu is a cCJMenuItem
-                Set peControlType to xtpControlPopup          
+                Set peControlType to xtpControlPopup
                 Set psCaption to "&View"
                 Set psToolTip to "View"
                 Set psDescription to "Available Views"
+
+                Object oAutoEntryMenuItem is a cCJMenuItem
+                    Set psCaption to "AutoEntry"
+                    Set psTooltip to "AutoEntry"
+                
+                    Procedure OnExecute Variant vCommandBarControl
+                        Handle hoClient
+                        Get Client_Id to hoClient
+                        Send Activate_oAutoEntry of hoClient
+                    End_Procedure
+                End_Object
+
+                Object oSoforEntryMenuItem is a cCJMenuItem
+                    Set psCaption to "SoforEntry"
+                    Set psTooltip to "SoforEntry"
+                
+                    Procedure OnExecute Variant vCommandBarControl
+                        Handle hoClient
+                        Get Client_Id to hoClient
+                        Send Activate_oSoforEntry of hoClient
+                    End_Procedure
+                End_Object
+
+                Object oTermkMenuItem is a cCJMenuItem
+                    Set psCaption to "Term‚k"
+                    Set psTooltip to "Term‚k"
+                
+                    Procedure OnExecute Variant vCommandBarControl
+                        Handle hoClient
+                        Get Client_Id to hoClient
+                        Send Activate_oTermekEntry of hoClient
+                    End_Procedure
+                End_Object
             End_Object
             
             Object oReportMenu is a cCJMenuItem
@@ -302,6 +335,9 @@ Object oMain is a Panel
 
     Object oClientArea is a ClientArea
         Use StdAbout.pkg
+        Use AutoEntry.vw
+        Use SoforEntry.vw
+        Use TermekEntry.vw
 
         Procedure Activate_About
             Send DoAbout "" "" "" "" ""
