@@ -4,6 +4,7 @@
 
 Use DFClient.pkg
 Use DFEntry.pkg
+Use Dfcentry.PKG
 
 Use cSoforDataDictionary.dd
 
@@ -11,7 +12,7 @@ ACTIVATE_VIEW Activate_oSoforEntry FOR oSoforEntry
 Object oSoforEntry is a dbView
     Set Location to 5 5
     Set Size to 38 236
-    Set Label To "SoforEntry"
+    Set Label to "Sof‹r"
     Set Border_Style to Border_Thick
 
 
@@ -28,7 +29,7 @@ Object oSoforEntry is a dbView
         Set Size to 13 186
         Set Location to 5 45
         Set peAnchors to anTopLeftRight
-        Set Label to "sofor nev"
+        Set Label to "Sof‹r neve"
         Set Label_Justification_mode to jMode_Left
         Set Label_Col_Offset to 40
         Set Label_row_Offset to 0
@@ -39,7 +40,7 @@ Object oSoforEntry is a dbView
         Set Size to 13 78
         Set Location to 20 45
         Set peAnchors to anTopLeftRight
-        Set Label to "sofor szigsz"
+        Set Label to "Szigsz."
         Set Label_Justification_mode to jMode_Left
         Set Label_Col_Offset to 40
         Set Label_row_Offset to 0

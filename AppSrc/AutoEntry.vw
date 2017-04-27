@@ -4,6 +4,7 @@
 
 Use DFClient.pkg
 Use DFEntry.pkg
+Use Dfcentry.PKG
 
 Use cAutoDataDictionary.dd
 
@@ -11,7 +12,7 @@ ACTIVATE_VIEW Activate_oAutoEntry FOR oAutoEntry
 Object oAutoEntry is a dbView
     Set Location to 5 5
     Set Size to 38 247
-    Set Label To "AutoEntry"
+    Set Label to "Aut¢"
     Set Border_Style to Border_Thick
 
 

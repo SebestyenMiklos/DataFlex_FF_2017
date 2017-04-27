@@ -2,6 +2,11 @@ Use DataDict.pkg
 
 Open FuvarlevelTetel
 Open Fuvarlevel
+Open system_table
+Open Termek
+
+Register_Object Fuvarlevel_sl
+Register_Object Termek_sl
 
 Class cFuvarlevelTetelDataDictionary is a DataDictionary
     
@@ -9,18 +14,28 @@ Class cFuvarlevelTetelDataDictionary is a DataDictionary
         Forward Send Construct_Object
         Set Main_File to FuvarlevelTetel.File_Number
 
+        Set Add_System_File to system_table.File_Number DD_Lock_On_All
+
         Set Add_Server_File to Fuvarlevel.File_Number
+        Set Add_Server_File to Termek.File_Number
 
         Set Foreign_Field_Option DD_KEYFIELD DD_NOPUT to True
         Set Foreign_Field_Option DD_KEYFIELD DD_FINDREQ to True
         Set Foreign_Field_Option DD_INDEXFIELD DD_NOPUT to True
         Set Foreign_Field_Option DD_DEFAULT DD_DISPLAYONLY to True
 
+        Set Key_Field_State Field FuvarlevelTetel.fuvarl_tetel_azonosito to True
+        Set Field_Auto_Increment Field FuvarlevelTetel.fuvarl_tetel_azonosito to File_Field system_table.fuvarl_tetel_azonosito
+
         Set Field_Label_Long Field FuvarlevelTetel.fuvarl_tetel_fuvarl_azonosito to "Fuvarlev‚l"
         Set Field_Label_Short Field FuvarlevelTetel.fuvarl_tetel_fuvarl_azonosito to "Fuvarl."
+        Set Field_Prompt_Object Field FuvarlevelTetel.fuvarl_tetel_fuvarl_azonosito to Fuvarlevel_sl
+        Set Field_Option Field FuvarlevelTetel.fuvarl_tetel_fuvarl_azonosito DD_AUTOFIND to True
 
         Set Field_Label_Long Field FuvarlevelTetel.fuvarl_tetel_termek_azonosito to "Term‚k"
         Set Field_Label_Short Field FuvarlevelTetel.fuvarl_tetel_termek_azonosito to "Term‚k"
+        Set Field_Prompt_Object Field FuvarlevelTetel.fuvarl_tetel_termek_azonosito to Termek_sl
+        Set Field_Option Field FuvarlevelTetel.fuvarl_tetel_termek_azonosito DD_AUTOFIND to True
 
         Set Field_Label_Long Field FuvarlevelTetel.fuvarl_tetel_termek_mennyiseg to "Mennyis‚g"
         Set Field_Label_Short Field FuvarlevelTetel.fuvarl_tetel_termek_mennyiseg to "Mennyis‚g"
@@ -28,3 +43,9 @@ Class cFuvarlevelTetelDataDictionary is a DataDictionary
     End_Procedure
 
 End_Class
+
+#IFDEF Is$WebApp
+#ELSE
+Use Termek.sl
+Use Fuvarlevel.sl
+#ENDIF

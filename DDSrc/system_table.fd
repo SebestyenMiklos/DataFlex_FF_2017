@@ -3,3 +3,4 @@
 #REPLACE system_table.termek_azonosito |FN6,1
 #REPLACE system_table.sofor_azonosito |FN6,2
 #REPLACE system_table.fuvarl_azonosito |FN6,3
+#REPLACE system_table.fuvarl_tetel_azonosito |FN6,4

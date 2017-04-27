@@ -1,3 +1,4 @@
 termek_azonosito
 sofor_azonosito
 fuvarl_azonosito
+fuvarl_tetel_azonosito

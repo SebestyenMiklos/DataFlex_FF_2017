@@ -4,6 +4,8 @@ Open Sofor
 Open Fuvarlevel
 Open system_table
 
+Register_Object Sofor_sl
+
 Class cSoforDataDictionary is a DataDictionary
     
     Procedure Construct_Object
@@ -22,10 +24,22 @@ Class cSoforDataDictionary is a DataDictionary
         Set Field_Option Field Sofor.sofor_azonosito DD_AUTOFIND to True
         Set Field_Auto_Increment Field Sofor.sofor_azonosito to File_Field system_table.sofor_azonosito
         Set Key_Field_State Field Sofor.sofor_azonosito to True
+        Set Field_Label_Long Field Sofor.sofor_azonosito to "Sof‹r id"
+        Set Field_Label_Short Field Sofor.sofor_azonosito to "Azonos¡t¢"
+        Set Field_Prompt_Object Field Sofor.sofor_azonosito to Sofor_sl
 
         Set Field_Label_Long Field Sofor.sofor_nev to "Sof‹r neve"
         Set Field_Label_Short Field Sofor.sofor_nev to "N‚v"
+        Set Field_Prompt_Object Field Sofor.sofor_nev to Sofor_sl
+
+        Set Field_Label_Long Field Sofor.sofor_szigsz to "Szigsz."
+        Set Field_Prompt_Object Field Sofor.sofor_szigsz to Sofor_sl
 
     End_Procedure
 
 End_Class
+
+#IFDEF Is$WebApp
+#ELSE
+Use Sofor.sl
+#ENDIF

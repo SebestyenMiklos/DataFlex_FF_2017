@@ -5,3 +5,4 @@ fuvarl_munkaido_menyiseg
 fuvarl_datum
 fuvarl_uzemanyag_mennyiseg
 fuvarl_uzemanyag_egysegar
+fuvarl_teljesitett_km

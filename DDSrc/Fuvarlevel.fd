@@ -6,4 +6,5 @@
 #REPLACE Fuvarlevel.fuvarl_munkaido_menyiseg |FN4,4
 #REPLACE Fuvarlevel.fuvarl_datum |FD4,5
 #REPLACE Fuvarlevel.fuvarl_uzemanyag_mennyiseg |FN4,6
-#REPLACE Fuvarlevel.fuvarl_uzemanyag_egysegar |FS4,7
+#REPLACE Fuvarlevel.fuvarl_uzemanyag_egysegar |FN4,7
+#REPLACE Fuvarlevel.fuvarl_teljesitett_km |FN4,8

@@ -4,6 +4,7 @@
 
 Use DFClient.pkg
 Use DFEntry.pkg
+Use Dfcentry.PKG
 
 Use cTermekDataDictionary.dd
 

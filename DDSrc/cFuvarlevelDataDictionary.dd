@@ -6,6 +6,10 @@ Open Sofor
 Open Auto
 Open system_table
 
+Register_Object Auto_sl
+Register_Object Sofor_sl
+Register_Object Fuvarlevel_sl
+
 Class cFuvarlevelDataDictionary is a DataDictionary
     
     Procedure Construct_Object
@@ -27,7 +31,43 @@ Class cFuvarlevelDataDictionary is a DataDictionary
         Set Field_Auto_Increment Field Fuvarlevel.fuvarl_azonosito to File_Field system_table.fuvarl_azonosito
         Set Field_Option Field Fuvarlevel.fuvarl_azonosito DD_AUTOFIND to True
         Set Key_Field_State Field Fuvarlevel.fuvarl_azonosito to True
+        Set Field_Prompt_Object Field Fuvarlevel.fuvarl_azonosito to Fuvarlevel_sl
+        Set Field_Label_Long Field Fuvarlevel.fuvarl_auto_rendszam to "Rendsz m"
+        Set Field_Option Field Fuvarlevel.fuvarl_auto_rendszam DD_AUTOFIND to True
+        Set Field_Prompt_Object Field Fuvarlevel.fuvarl_auto_rendszam to Auto_sl
+
+        Set Field_Option Field Fuvarlevel.fuvarl_sofor_azonosito DD_REQUIRED to True
+        Set Field_Label_Long Field Fuvarlevel.fuvarl_sofor_azonosito to "Sof‹r"
+        Set Field_Option Field Fuvarlevel.fuvarl_sofor_azonosito DD_AUTOFIND to True
+        Set Field_Prompt_Object Field Fuvarlevel.fuvarl_sofor_azonosito to Sofor_sl
+
+        Set Field_Option Field Fuvarlevel.fuvarl_munkaido_menyiseg DD_REQUIRED to True
+        Set Field_Label_Long Field Fuvarlevel.fuvarl_munkaido_menyiseg to "Munkaid‹ (¢ra)"
+
+        Set Field_Option Field Fuvarlevel.fuvarl_datum DD_REQUIRED to True
+        Set Field_Label_Long Field Fuvarlevel.fuvarl_datum to "Teljes¡t‚s d tuma"
+        Set Field_Label_Short Field Fuvarlevel.fuvarl_datum to "D tum"
+        Set Field_Value_Range Field Fuvarlevel.fuvarl_datum to 01/01/2015 12/31/2017
+        Set Field_Mask Field Fuvarlevel.fuvarl_datum to "####.##.##"
+
+        Set Field_Option Field Fuvarlevel.fuvarl_uzemanyag_mennyiseg DD_REQUIRED to True
+        Set Field_Label_Long Field Fuvarlevel.fuvarl_uzemanyag_mennyiseg to "šzemanyag (liter)"
+        Set Field_Label_Short Field Fuvarlevel.fuvarl_uzemanyag_mennyiseg to "šzemanyag (l)"
+
+        Set Field_Option Field Fuvarlevel.fuvarl_uzemanyag_egysegar DD_REQUIRED to True
+        Set Field_Label_Long Field Fuvarlevel.fuvarl_uzemanyag_egysegar to "šzemanyag egys‚g r"
+        Set Field_Label_Short Field Fuvarlevel.fuvarl_uzemanyag_egysegar to "ša. e r."
+
+        Set Field_Label_Long Field Fuvarlevel.fuvarl_teljesitett_km to "Teljes¡tett kil¢m‚ter"
+        Set Field_Label_Short Field Fuvarlevel.fuvarl_teljesitett_km to "Kil¢m‚ter"
 
     End_Procedure
 
 End_Class
+
+#IFDEF Is$WebApp
+#ELSE
+Use Fuvarlevel.sl
+Use Sofor.sl
+Use Auto.sl
+#ENDIF
