@@ -154,14 +154,14 @@ Object oMain is a Panel
                 Set psToolTip to "Report"
                 Set psDescription to "Available Reports"
 
-                Object oSoforReportMenuItem is a cCJMenuItem
-                    Set psCaption to "SoforReport"
-                    Set psTooltip to "SoforReport"
+                Object oSoforReport7MenuItem is a cCJMenuItem
+                    Set psCaption to "SoforReport7"
+                    Set psTooltip to "SoforReport7"
                 
                     Procedure OnExecute Variant vCommandBarControl
                         Handle hoClient
                         Get Client_Id to hoClient
-                        Send Activate_oSoforReport of hoClient
+                        Send Activate_oSoforReport7 of hoClient
                     End_Procedure
                 End_Object
             End_Object

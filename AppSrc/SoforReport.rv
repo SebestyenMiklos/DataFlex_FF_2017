@@ -10,11 +10,13 @@ Use cSoforDataDictionary.dd
 Use cAutoDataDictionary.dd
 Use cFuvarlevelDataDictionary.dd
 
-ACTIVATE_VIEW Activate_oSoforReport FOR oSoforReport
-Object oSoforReport is a ReportView
+Use MonthCalendarPrompt.dg
+
+ACTIVATE_VIEW Activate_oSoforReport7 FOR oSoforReport7
+Object oSoforReport7 is a ReportView
     Set Location to 6 6
     Set Size to 100 202
-    Set Label To "SoforReport"
+    Set Label To "SoforReport7"
 
 
     Object oSofor_DD is a cSoforDataDictionary
@@ -65,6 +67,9 @@ Object oSoforReport is a ReportView
             Set Label_Col_Offset to 2
             Set Label_Justification_Mode to jMode_Right
             Set Form_datatype to mask_date_window
+            
+            Set Prompt_Object to oMonthCalendarPrompt
+            Set Prompt_Button_Mode to PB_PromptOn
         End_Object 
 
         Object oSelStop is a Form
@@ -75,7 +80,11 @@ Object oSoforReport is a ReportView
             Set Label_Col_Offset to 2
             Set Label_Justification_Mode to jMode_Right
             Set Form_datatype to mask_date_window
+            
+            Set Prompt_Object to oMonthCalendarPrompt
+            Set Prompt_Button_Mode to PB_PromptOn
         End_Object 
+        
 
 
         Function StartValue returns String
@@ -84,7 +93,7 @@ Object oSoforReport is a ReportView
             Function_return sValue
         End_Function 
 
-        Function StopValue returns String
+        Function StopValue Returns String
             string sValue
             Get Value of oSelStop to sValue
             Function_return sValue
@@ -152,12 +161,12 @@ Object oSoforReport is a ReportView
 
     Object oReport is a cWinReport2
 
-        Set Report_Title to "SoforReport"
+        Set Report_Title to "SoforReport7"
 
         // Set DDO, Index and breaks for the report
         Set Server to oFuvarlevel_DD
         Set Ordering to 3
-        // Report_Breaks file.field // no breaks in this report
+        Report_Breaks Fuvarlevel.fuvarl_sofor_azonosito
 
         Function Starting_Main_Report Returns Integer
             Boolean bErr
@@ -225,30 +234,61 @@ Object oSoforReport is a ReportView
 
         End_Procedure 
 
-        Procedure Page_Title 
+        // Page_Title appears on every page after Page_Header
+        //Procedure Page_Title
+        //    string  sFont
+        //    integer iFontSize
+        //    Move "arial" to sFont
+        //    Move 10 to iFontSize
+        //    DFFont sFont
+        //    DFFontSize iFontSize
+        //    DFBeginHeader  DFPageTitle
+        //        DFHeaderFrame  Hdr_Margins 0.01
+        //        DFHeaderPos    Hdr_Left
+        //        DFHeaderMargin Hm_BottomOuter 0.08
+        //        DFWrite     "Page_Title" (Font_Bold+Font_Center)
+        //    DFEndHeader
+        //End_Procedure
+
+        Procedure SubHeader1 
             string  sFont 
-            integer iFontSize iHeaderStyle iFill iBorder
+            integer iFontSize iStyle
+            integer iFill iBorder iHeaderStyle
 
             Move "arial" to sFont
             Move 10 to iFontSize
+            Move (Font_Bold + rgb_dBlue) to iStyle
             Move (Font_Bold + rgb_dBlue) to iHeaderStyle
-            Move (rgb_Grey) to iFill
-            Move (rgb_Grey) to iBorder
+            Move (rgb_dGrey) to iBorder
+            Get DFGetDFColor 242 242 242 to iFill
 
             DFFont sFont
             DFFontSize iFontSize
-            DFBeginHeader DFPageTitle
-                DFHeaderPos   Hdr_Left
-                DFHeaderFrame Hdr_Margins 0.01 iBorder iFill
-                DFHeaderMargin HM_TopInner    0.04
-                DFHeaderMargin HM_BottomInner 0.04
-                DFHeaderMargin HM_BottomOuter 0.08
+            DFBeginHeader DFSubHeader 1
+                DFHeaderLineCheck 5
+                DFHeaderWrap   HDR_Wrap
+                DFHeaderPos    HDR_Left
+                DFHeaderFrame  Hdr_Margins 0.01 iBorder iFill
+                DFHeaderMargin hm_BottomOuter 0.08
+                DFHeaderMargin hm_TopInner    0.04
+                DFHeaderMargin hm_BottomInner 0.04
 
-                DFWritePos "Azonos¡t¢"                    (0.08 + 2.3) (iHeaderStyle + Font_Right) -1 2.3
-                DFWritePos "N‚v"                          2.46 iHeaderStyle -1 6.39
-                DFWritePos "Munkaid‹ (¢ra)"               (8.93 + 3.58) (iHeaderStyle + Font_Right) -1 3.58
-                DFWritePos "Kil¢m‚ter"                    (12.59 + 2.3) (iHeaderStyle + Font_Right) -1 2.3
+                // display fields to be placed in this sub-header
+                DFWritePos "Sof‹r neve:"                 0.1 iHeaderStyle -1 4.9
+                DFWritePos Sofor.sofor_nev                5 iStyle -1
                 DFWriteLn
+
+                // write the heading for the body section
+                DFFontSize 1 // create a very small space on top and below the horizontal bar
+                DFWriteLn
+                DFWriteLine DFGR_CURRLINE DFGR_CURRLINE DFGR_RB_MARGIN DFGR_HORI iBorder
+                DFWriteLn
+                DFFontSize iFontSize
+                DFWritePos "D tum"                        0.08 iHeaderStyle -1 2.13
+                DFWritePos "Munkaid‹ (¢ra)"               (2.29 + 3.58) (iHeaderStyle + Font_Right) -1 3.58
+                DFWritePos "Kil¢m‚ter"                    (5.95 + 2.3) (iHeaderStyle + Font_Right) -1 2.3
+                DFWriteLn
+
             DFEndHeader
 
         End_Procedure 
@@ -264,13 +304,45 @@ Object oSoforReport is a ReportView
             DFFont sFont
             DFFontSize iFontSize
 
-            DFWritePos Sofor.sofor_azonosito          (0.08 + 2.3) (iStyle + Font_Right) 0 2.3
-            DFWritePos Sofor.sofor_nev                2.46 iStyle -1 6.39
-            DFWritePos Fuvarlevel.fuvarl_munkaido_menyiseg (8.93 + 3.58) (iStyle + Font_Right) 0 3.58
-            Send Add_SubTotal 2 Fuvarlevel.fuvarl_munkaido_menyiseg
-            DFWritePos Fuvarlevel.fuvarl_teljesitett_km (12.59 + 2.3) (iStyle + Font_Right) 0 2.3
+            DFWritePos Fuvarlevel.fuvarl_datum        0.08 iStyle -1 2.13
+            DFWritePos Fuvarlevel.fuvarl_munkaido_menyiseg (2.29 + 3.58) (iStyle + Font_Right) 0 3.58
+            Send Add_SubTotal 1 Fuvarlevel.fuvarl_munkaido_menyiseg
+            DFWritePos Fuvarlevel.fuvarl_teljesitett_km (5.95 + 2.3) (iStyle + Font_Right) 0 2.3
             DFWriteLn
-            Send Add_SubTotal 3 Fuvarlevel.fuvarl_teljesitett_km
+            Send Add_SubTotal 2 Fuvarlevel.fuvarl_teljesitett_km
+
+        End_Procedure 
+
+        Procedure SubTotal1 
+            string  sFont 
+            integer iFontSize iStyle iFill iBorder
+            number  nAmount
+
+            Move "arial" to sFont
+            Move 10 to iFontSize
+            Move (font_bold) to iStyle
+            Move (rgb_dGrey) to iBorder
+            Get DFGetDFColor 242 242 242 to iFill
+
+            DFFont sFont
+            DFFontSize iFontSize
+            DFBeginHeader DFSubTotal 1
+                DFHeaderPos   Hdr_Left
+                DFHeaderWrap  Hdr_NoWrap
+                DFHeaderFrame HDR_Margins 0.01 iBorder iFill
+                DFHeaderMargin hm_BottomOuter 0.16
+                DFHeaderMargin hm_TopInner 0.04
+                DFHeaderMargin hm_BottomInner 0.04
+                DFHeaderFrame Hdr_Margins 0.01 iBorder iFill
+
+                Get SubTotal ( 1 + 0) to nAmount
+                Send Add_SubTotal ( 1 + 3) nAmount
+                DFWritePos nAmount (2.29 + 3.58) (iStyle + Font_Right) 0 3.58
+                Get SubTotal ( 2 + 0) to nAmount
+                Send Add_SubTotal ( 2 + 3) nAmount
+                DFWritePos nAmount (5.95 + 2.3) (iStyle + Font_Right) 0 2.3
+                DFWriteLn
+            DFEndHeader
 
         End_Procedure 
 
@@ -291,10 +363,10 @@ Object oSoforReport is a ReportView
                 DFHeaderPos   Hdr_Left
                 DFHeaderFrame Hdr_Margins 0.01 iBorder iFill
 
-                Get SubTotal ( 2 + 0) to nAmount
-                DFWritePos nAmount (8.93 + 3.58) (iStyle + Font_Right) 0 3.58
-                Get SubTotal ( 3 + 0) to nAmount
-                DFWritePos nAmount (12.59 + 2.3) (iStyle + Font_Right) 0 2.3
+                Get SubTotal ( 1 + 3) to nAmount
+                DFWritePos nAmount (2.29 + 3.58) (iStyle + Font_Right) 0 3.58
+                Get SubTotal ( 2 + 3) to nAmount
+                DFWritePos nAmount (5.95 + 2.3) (iStyle + Font_Right) 0 2.3
                 DFWriteLn
             DFEndHeader
 

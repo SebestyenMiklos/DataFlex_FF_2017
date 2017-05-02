@@ -49,6 +49,7 @@ Class cFuvarlevelDataDictionary is a DataDictionary
         Set Field_Label_Short Field Fuvarlevel.fuvarl_datum to "D tum"
         Set Field_Value_Range Field Fuvarlevel.fuvarl_datum to 01/01/2015 12/31/2017
         Set Field_Mask Field Fuvarlevel.fuvarl_datum to "####.##.##"
+        Set Field_Mask_Type Field Fuvarlevel.fuvarl_datum to Mask_Window
 
         Set Field_Option Field Fuvarlevel.fuvarl_uzemanyag_mennyiseg DD_REQUIRED to True
         Set Field_Label_Long Field Fuvarlevel.fuvarl_uzemanyag_mennyiseg to "šzemanyag (liter)"
