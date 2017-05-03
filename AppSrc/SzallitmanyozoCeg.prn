@@ -1,4 +1,4 @@
-Compiling Program: C:\Users\Anonimus\Desktop\beadando2\AppSrc\SzallitmanyozoCeg.src
+Compiling Program: C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\SzallitmanyozoCeg.src
 Memory Available: 2147483647
 1>Use DFAllEnt.pkg
 Using pre-compiled package DFALLENT.PKG
@@ -3000,7 +3000,7 @@ Including file: DFBTRDRV.PKG    (C:\Program Files (x86)\DataFlex 18.2\Pkg\DFBTRD
 77208>>>        Send Destroy of hoObj // when done, it will be destroyed
 77209>>>End_procedure
 77210>        Use AutoEntry.vw
-Including file: AutoEntry.vw    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\AutoEntry.vw)
+Including file: AutoEntry.vw    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\AutoEntry.vw)
 77210>>>// C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\AutoEntry.vw
 77210>>>// AutoEntry
 77210>>>//
@@ -3010,13 +3010,13 @@ Including file: AutoEntry.vw    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\Auto
 77210>>>Use Dfcentry.PKG
 77210>>>
 77210>>>Use cAutoDataDictionary.dd
-Including file: cAutoDataDictionary.dd    (C:\Users\Anonimus\Desktop\beadando2\DDSrc\cAutoDataDictionary.dd)
+Including file: cAutoDataDictionary.dd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\cAutoDataDictionary.dd)
 77210>>>>>Use DataDict.pkg
 77210>>>>>
 77210>>>>>Open Auto
-Including file: Auto.fd    (C:\Users\Anonimus\Desktop\beadando2\DDSrc\Auto.fd)
+Including file: Auto.fd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\Auto.fd)
 77212>>>>>Open Fuvarlevel
-Including file: Fuvarlevel.fd    (C:\Users\Anonimus\Desktop\beadando2\DDSrc\Fuvarlevel.fd)
+Including file: Fuvarlevel.fd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\Fuvarlevel.fd)
 77214>>>>>
 77214>>>>>Register_Object Auto_sl
 77214>>>>>
@@ -3048,7 +3048,7 @@ Including file: Fuvarlevel.fd    (C:\Users\Anonimus\Desktop\beadando2\DDSrc\Fuva
 77234>>>>>End_Class
 77235>>>>>
 77235>>>>>Use Auto.sl
-Including file: Auto.sl    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\Auto.sl)
+Including file: Auto.sl    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\Auto.sl)
 77235>>>>>>>// Auto.sl
 77235>>>>>>>// Auto lista
 77235>>>>>>>
@@ -3182,7 +3182,7 @@ Including file: Auto.sl    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\Auto.sl)
 77365>>>
 77365>>>End_Object 
 77366>        Use SoforEntry.vw
-Including file: SoforEntry.vw    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\SoforEntry.vw)
+Including file: SoforEntry.vw    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\SoforEntry.vw)
 77366>>>// C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\SoforEntry.vw
 77366>>>// SoforEntry
 77366>>>//
@@ -3192,14 +3192,14 @@ Including file: SoforEntry.vw    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\Sof
 77366>>>Use Dfcentry.PKG
 77366>>>
 77366>>>Use cSoforDataDictionary.dd
-Including file: cSoforDataDictionary.dd    (C:\Users\Anonimus\Desktop\beadando2\DDSrc\cSoforDataDictionary.dd)
+Including file: cSoforDataDictionary.dd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\cSoforDataDictionary.dd)
 77366>>>>>Use DataDict.pkg
 77366>>>>>
 77366>>>>>Open Sofor
-Including file: Sofor.fd    (C:\Users\Anonimus\Desktop\beadando2\DDSrc\Sofor.fd)
+Including file: Sofor.fd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\Sofor.fd)
 77368>>>>>Open Fuvarlevel
 77370>>>>>Open system_table
-Including file: system_table.fd    (C:\Users\Anonimus\Desktop\beadando2\DDSrc\system_table.fd)
+Including file: system_table.fd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\system_table.fd)
 77372>>>>>
 77372>>>>>Register_Object Sofor_sl
 77372>>>>>
@@ -3237,7 +3237,7 @@ Including file: system_table.fd    (C:\Users\Anonimus\Desktop\beadando2\DDSrc\sy
 77396>>>>>End_Class
 77397>>>>>
 77397>>>>>Use Sofor.sl
-Including file: Sofor.sl    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\Sofor.sl)
+Including file: Sofor.sl    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\Sofor.sl)
 77397>>>>>>>// Sofor.sl
 77397>>>>>>>// Sof‹r lista
 77397>>>>>>>
@@ -3377,7 +3377,7 @@ Including file: Sofor.sl    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\Sofor.sl
 77533>>>
 77533>>>End_Object 
 77534>        Use TermekEntry.vw
-Including file: TermekEntry.vw    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\TermekEntry.vw)
+Including file: TermekEntry.vw    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\TermekEntry.vw)
 77534>>>// C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\TermekEntry.vw
 77534>>>// Term‚k
 77534>>>//
@@ -3387,13 +3387,13 @@ Including file: TermekEntry.vw    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\Te
 77534>>>Use Dfcentry.PKG
 77534>>>
 77534>>>Use cTermekDataDictionary.dd
-Including file: cTermekDataDictionary.dd    (C:\Users\Anonimus\Desktop\beadando2\DDSrc\cTermekDataDictionary.dd)
+Including file: cTermekDataDictionary.dd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\cTermekDataDictionary.dd)
 77534>>>>>Use DataDict.pkg
 77534>>>>>
 77534>>>>>Open Termek
-Including file: Termek.fd    (C:\Users\Anonimus\Desktop\beadando2\DDSrc\Termek.fd)
+Including file: Termek.fd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\Termek.fd)
 77536>>>>>Open FuvarlevelTetel
-Including file: FuvarlevelTetel.fd    (C:\Users\Anonimus\Desktop\beadando2\DDSrc\FuvarlevelTetel.fd)
+Including file: FuvarlevelTetel.fd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\FuvarlevelTetel.fd)
 77538>>>>>Open system_table
 77540>>>>>
 77540>>>>>Register_Object Termek_sl
@@ -3430,7 +3430,7 @@ Including file: FuvarlevelTetel.fd    (C:\Users\Anonimus\Desktop\beadando2\DDSrc
 77562>>>>>End_Class
 77563>>>>>
 77563>>>>>Use Termek.sl
-Including file: Termek.sl    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\Termek.sl)
+Including file: Termek.sl    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\Termek.sl)
 77563>>>>>>>// Termek.sl
 77563>>>>>>>// Term‚k lista
 77563>>>>>>>
@@ -3570,7 +3570,7 @@ Including file: Termek.sl    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\Termek.
 77699>>>
 77699>>>End_Object 
 77700>        Use FuvarlevelEntry.vw
-Including file: FuvarlevelEntry.vw    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\FuvarlevelEntry.vw)
+Including file: FuvarlevelEntry.vw    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\FuvarlevelEntry.vw)
 77700>>>// C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\FuvarlevelEntry.vw
 77700>>>// Fuvarlev‚l
 77700>>>//
@@ -3584,7 +3584,7 @@ Including file: FuvarlevelEntry.vw    (C:\Users\Anonimus\Desktop\beadando2\AppSr
 77700>>>Use cSoforDataDictionary.dd
 77700>>>Use cAutoDataDictionary.dd
 77700>>>Use cFuvarlevelDataDictionary.dd
-Including file: cFuvarlevelDataDictionary.dd    (C:\Users\Anonimus\Desktop\beadando2\DDSrc\cFuvarlevelDataDictionary.dd)
+Including file: cFuvarlevelDataDictionary.dd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\cFuvarlevelDataDictionary.dd)
 77700>>>>>Use DataDict.pkg
 77700>>>>>
 77700>>>>>Open Fuvarlevel
@@ -3654,7 +3654,7 @@ Including file: cFuvarlevelDataDictionary.dd    (C:\Users\Anonimus\Desktop\beada
 77752>>>>>End_Class
 77753>>>>>
 77753>>>>>Use Fuvarlevel.sl
-Including file: Fuvarlevel.sl    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\Fuvarlevel.sl)
+Including file: Fuvarlevel.sl    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\Fuvarlevel.sl)
 77753>>>>>>>// Fuvarlevel.sl
 77753>>>>>>>// Fuvarlev‚l lista
 77753>>>>>>>
@@ -3776,7 +3776,7 @@ Including file: Fuvarlevel.sl    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\Fuv
 77866>>>>>Use Sofor.sl
 77866>>>>>Use Auto.sl
 77866>>>Use cFuvarlevelTetelDataDictionary.dd
-Including file: cFuvarlevelTetelDataDictionary.dd    (C:\Users\Anonimus\Desktop\beadando2\DDSrc\cFuvarlevelTetelDataDictionary.dd)
+Including file: cFuvarlevelTetelDataDictionary.dd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\cFuvarlevelTetelDataDictionary.dd)
 77866>>>>>Use DataDict.pkg
 77866>>>>>
 77866>>>>>Open FuvarlevelTetel
@@ -4008,7 +4008,7 @@ Including file: cFuvarlevelTetelDataDictionary.dd    (C:\Users\Anonimus\Desktop\
 78070>>>
 78070>>>End_Object 
 78071>        Use FuvarlevelTetelEntry.vw
-Including file: FuvarlevelTetelEntry.vw    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\FuvarlevelTetelEntry.vw)
+Including file: FuvarlevelTetelEntry.vw    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\FuvarlevelTetelEntry.vw)
 78071>>>// C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\FuvarlevelTetelEntry.vw
 78071>>>// Fuvarlev‚l t‚tel
 78071>>>//
@@ -4091,7 +4091,7 @@ Including file: FuvarlevelTetelEntry.vw    (C:\Users\Anonimus\Desktop\beadando2\
 78141>>>
 78141>>>End_Object 
 78142>        Use SoforReport.rv
-Including file: SoforReport.rv    (C:\Users\Anonimus\Desktop\beadando2\AppSrc\SoforReport.rv)
+Including file: SoforReport.rv    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\SoforReport.rv)
 78142>>>// SoforReport.rv
 78142>>>// SoforReport
 78142>>>Register_Object oReport
@@ -7362,8 +7362,10 @@ Including file: cWinControlEx.pkg    (C:\Program Files (x86)\DataFlex 18.2\Pkg\c
 80281>>>
 80281>>>        // Set DDO, Index and breaks for the report
 80281>>>        Set Server to oFuvarlevel_DD
-80282>>>        Set Ordering to 3
-80283>>>        Report_Breaks Fuvarlevel.fuvarl_sofor_azonosito
+80282>>>        
+80282>>>        Report_Breaks Fuvarlevel.fuvarl_sofor_azonosito
+80296>>>        
+80296>>>        Set Ordering to 5
 80297>>>
 80297>>>        Function Starting_Main_Report Returns Integer
 80300>>>            Boolean bErr
@@ -7700,6 +7702,6 @@ Total Resources: 0
 Total Commands : 80516
 Total Windows  : 1
 Total Pages    : 1
-Static Data    : 497549
+Static Data    : 498793
 Message area   : 560646
-Total Blocks   : 28877
+Total Blocks   : 28894

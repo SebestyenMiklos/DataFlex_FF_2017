@@ -165,8 +165,10 @@ Object oSoforReport7 is a ReportView
 
         // Set DDO, Index and breaks for the report
         Set Server to oFuvarlevel_DD
-        Set Ordering to 3
+        
         Report_Breaks Fuvarlevel.fuvarl_sofor_azonosito
+        
+        Set Ordering to 5
 
         Function Starting_Main_Report Returns Integer
             Boolean bErr
