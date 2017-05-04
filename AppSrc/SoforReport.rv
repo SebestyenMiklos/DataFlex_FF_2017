@@ -16,7 +16,7 @@ ACTIVATE_VIEW Activate_oSoforReport7 FOR oSoforReport7
 Object oSoforReport7 is a ReportView
     Set Location to 6 6
     Set Size to 100 202
-    Set Label To "SoforReport7"
+    Set Label to "Sof‹r jelent‚s"
 
 
     Object oSofor_DD is a cSoforDataDictionary
@@ -161,7 +161,7 @@ Object oSoforReport7 is a ReportView
 
     Object oReport is a cWinReport2
 
-        Set Report_Title to "SoforReport7"
+        Set Report_Title to "Sof‹r jelent‚s"
 
         // Set DDO, Index and breaks for the report
         Set Server to oFuvarlevel_DD

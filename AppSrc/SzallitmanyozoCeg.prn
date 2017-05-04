@@ -1,5 +1,5 @@
-Compiling Program: C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\SzallitmanyozoCeg.src
-Memory Available: 2147483647
+Compiling Program: C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\SzallitmanyozoCeg.src
+Memory Available: 2147483646
 1>Use DFAllEnt.pkg
 Using pre-compiled package DFALLENT.PKG
 Including file: dfallent.pkd    (C:\Program Files (x86)\DataFlex 18.2\Pkg\dfallent.pkd)
@@ -747,8 +747,8 @@ Including file: oDEOEditContextMenu17.pkg    (C:\Program Files (x86)\DataFlex 18
 75906>                Set psDescription to "Available Views"
 75907>
 75907>                Object oAutoEntryMenuItem is a cCJMenuItem
-75909>                    Set psCaption to "AutoEntry"
-75910>                    Set psTooltip to "AutoEntry"
+75909>                    Set psCaption to "G‚pkocsi"
+75910>                    Set psTooltip to "G‚pkocsi"
 75911>                
 75911>                    Procedure OnExecute Variant vCommandBarControl
 75914>                        Handle hoClient
@@ -758,8 +758,8 @@ Including file: oDEOEditContextMenu17.pkg    (C:\Program Files (x86)\DataFlex 18
 75917>                End_Object
 75918>
 75918>                Object oSoforEntryMenuItem is a cCJMenuItem
-75920>                    Set psCaption to "SoforEntry"
-75921>                    Set psTooltip to "SoforEntry"
+75920>                    Set psCaption to "Sof‹r"
+75921>                    Set psTooltip to "Sof‹r"
 75922>                
 75922>                    Procedure OnExecute Variant vCommandBarControl
 75925>                        Handle hoClient
@@ -809,8 +809,8 @@ Including file: oDEOEditContextMenu17.pkg    (C:\Program Files (x86)\DataFlex 18
 75968>                Set psDescription to "Available Reports"
 75969>
 75969>                Object oSoforReport7MenuItem is a cCJMenuItem
-75971>                    Set psCaption to "SoforReport7"
-75972>                    Set psTooltip to "SoforReport7"
+75971>                    Set psCaption to "Sof‹r jelent‚s"
+75972>                    Set psTooltip to "Sof‹r jelent‚s"
 75973>                
 75973>                    Procedure OnExecute Variant vCommandBarControl
 75976>                        Handle hoClient
@@ -3000,7 +3000,7 @@ Including file: DFBTRDRV.PKG    (C:\Program Files (x86)\DataFlex 18.2\Pkg\DFBTRD
 77208>>>        Send Destroy of hoObj // when done, it will be destroyed
 77209>>>End_procedure
 77210>        Use AutoEntry.vw
-Including file: AutoEntry.vw    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\AutoEntry.vw)
+Including file: AutoEntry.vw    (C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\AutoEntry.vw)
 77210>>>// C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\AutoEntry.vw
 77210>>>// AutoEntry
 77210>>>//
@@ -3010,13 +3010,13 @@ Including file: AutoEntry.vw    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\Dat
 77210>>>Use Dfcentry.PKG
 77210>>>
 77210>>>Use cAutoDataDictionary.dd
-Including file: cAutoDataDictionary.dd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\cAutoDataDictionary.dd)
+Including file: cAutoDataDictionary.dd    (C:\DataFlex Projects\DataFlex_FF_2017\DDSrc\cAutoDataDictionary.dd)
 77210>>>>>Use DataDict.pkg
 77210>>>>>
 77210>>>>>Open Auto
-Including file: Auto.fd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\Auto.fd)
+Including file: Auto.fd    (C:\DataFlex Projects\DataFlex_FF_2017\DDSrc\Auto.fd)
 77212>>>>>Open Fuvarlevel
-Including file: Fuvarlevel.fd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\Fuvarlevel.fd)
+Including file: Fuvarlevel.fd    (C:\DataFlex Projects\DataFlex_FF_2017\DDSrc\Fuvarlevel.fd)
 77214>>>>>
 77214>>>>>Register_Object Auto_sl
 77214>>>>>
@@ -3048,7 +3048,7 @@ Including file: Fuvarlevel.fd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\Da
 77234>>>>>End_Class
 77235>>>>>
 77235>>>>>Use Auto.sl
-Including file: Auto.sl    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\Auto.sl)
+Including file: Auto.sl    (C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\Auto.sl)
 77235>>>>>>>// Auto.sl
 77235>>>>>>>// Auto lista
 77235>>>>>>>
@@ -3182,7 +3182,7 @@ Including file: Auto.sl    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex
 77365>>>
 77365>>>End_Object 
 77366>        Use SoforEntry.vw
-Including file: SoforEntry.vw    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\SoforEntry.vw)
+Including file: SoforEntry.vw    (C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\SoforEntry.vw)
 77366>>>// C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\SoforEntry.vw
 77366>>>// SoforEntry
 77366>>>//
@@ -3192,14 +3192,14 @@ Including file: SoforEntry.vw    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\Da
 77366>>>Use Dfcentry.PKG
 77366>>>
 77366>>>Use cSoforDataDictionary.dd
-Including file: cSoforDataDictionary.dd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\cSoforDataDictionary.dd)
+Including file: cSoforDataDictionary.dd    (C:\DataFlex Projects\DataFlex_FF_2017\DDSrc\cSoforDataDictionary.dd)
 77366>>>>>Use DataDict.pkg
 77366>>>>>
 77366>>>>>Open Sofor
-Including file: Sofor.fd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\Sofor.fd)
+Including file: Sofor.fd    (C:\DataFlex Projects\DataFlex_FF_2017\DDSrc\Sofor.fd)
 77368>>>>>Open Fuvarlevel
 77370>>>>>Open system_table
-Including file: system_table.fd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\system_table.fd)
+Including file: system_table.fd    (C:\DataFlex Projects\DataFlex_FF_2017\DDSrc\system_table.fd)
 77372>>>>>
 77372>>>>>Register_Object Sofor_sl
 77372>>>>>
@@ -3237,7 +3237,7 @@ Including file: system_table.fd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\
 77396>>>>>End_Class
 77397>>>>>
 77397>>>>>Use Sofor.sl
-Including file: Sofor.sl    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\Sofor.sl)
+Including file: Sofor.sl    (C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\Sofor.sl)
 77397>>>>>>>// Sofor.sl
 77397>>>>>>>// Sof‹r lista
 77397>>>>>>>
@@ -3377,7 +3377,7 @@ Including file: Sofor.sl    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFle
 77533>>>
 77533>>>End_Object 
 77534>        Use TermekEntry.vw
-Including file: TermekEntry.vw    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\TermekEntry.vw)
+Including file: TermekEntry.vw    (C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\TermekEntry.vw)
 77534>>>// C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\TermekEntry.vw
 77534>>>// Term‚k
 77534>>>//
@@ -3387,13 +3387,13 @@ Including file: TermekEntry.vw    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\D
 77534>>>Use Dfcentry.PKG
 77534>>>
 77534>>>Use cTermekDataDictionary.dd
-Including file: cTermekDataDictionary.dd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\cTermekDataDictionary.dd)
+Including file: cTermekDataDictionary.dd    (C:\DataFlex Projects\DataFlex_FF_2017\DDSrc\cTermekDataDictionary.dd)
 77534>>>>>Use DataDict.pkg
 77534>>>>>
 77534>>>>>Open Termek
-Including file: Termek.fd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\Termek.fd)
+Including file: Termek.fd    (C:\DataFlex Projects\DataFlex_FF_2017\DDSrc\Termek.fd)
 77536>>>>>Open FuvarlevelTetel
-Including file: FuvarlevelTetel.fd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\FuvarlevelTetel.fd)
+Including file: FuvarlevelTetel.fd    (C:\DataFlex Projects\DataFlex_FF_2017\DDSrc\FuvarlevelTetel.fd)
 77538>>>>>Open system_table
 77540>>>>>
 77540>>>>>Register_Object Termek_sl
@@ -3430,7 +3430,7 @@ Including file: FuvarlevelTetel.fd    (C:\Users\markm\OneDrive\Dokumentumok\GitH
 77562>>>>>End_Class
 77563>>>>>
 77563>>>>>Use Termek.sl
-Including file: Termek.sl    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\Termek.sl)
+Including file: Termek.sl    (C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\Termek.sl)
 77563>>>>>>>// Termek.sl
 77563>>>>>>>// Term‚k lista
 77563>>>>>>>
@@ -3570,7 +3570,7 @@ Including file: Termek.sl    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFl
 77699>>>
 77699>>>End_Object 
 77700>        Use FuvarlevelEntry.vw
-Including file: FuvarlevelEntry.vw    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\FuvarlevelEntry.vw)
+Including file: FuvarlevelEntry.vw    (C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\FuvarlevelEntry.vw)
 77700>>>// C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\FuvarlevelEntry.vw
 77700>>>// Fuvarlev‚l
 77700>>>//
@@ -3584,7 +3584,7 @@ Including file: FuvarlevelEntry.vw    (C:\Users\markm\OneDrive\Dokumentumok\GitH
 77700>>>Use cSoforDataDictionary.dd
 77700>>>Use cAutoDataDictionary.dd
 77700>>>Use cFuvarlevelDataDictionary.dd
-Including file: cFuvarlevelDataDictionary.dd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\cFuvarlevelDataDictionary.dd)
+Including file: cFuvarlevelDataDictionary.dd    (C:\DataFlex Projects\DataFlex_FF_2017\DDSrc\cFuvarlevelDataDictionary.dd)
 77700>>>>>Use DataDict.pkg
 77700>>>>>
 77700>>>>>Open Fuvarlevel
@@ -3654,7 +3654,7 @@ Including file: cFuvarlevelDataDictionary.dd    (C:\Users\markm\OneDrive\Dokumen
 77752>>>>>End_Class
 77753>>>>>
 77753>>>>>Use Fuvarlevel.sl
-Including file: Fuvarlevel.sl    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\Fuvarlevel.sl)
+Including file: Fuvarlevel.sl    (C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\Fuvarlevel.sl)
 77753>>>>>>>// Fuvarlevel.sl
 77753>>>>>>>// Fuvarlev‚l lista
 77753>>>>>>>
@@ -3776,7 +3776,7 @@ Including file: Fuvarlevel.sl    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\Da
 77866>>>>>Use Sofor.sl
 77866>>>>>Use Auto.sl
 77866>>>Use cFuvarlevelTetelDataDictionary.dd
-Including file: cFuvarlevelTetelDataDictionary.dd    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\DDSrc\cFuvarlevelTetelDataDictionary.dd)
+Including file: cFuvarlevelTetelDataDictionary.dd    (C:\DataFlex Projects\DataFlex_FF_2017\DDSrc\cFuvarlevelTetelDataDictionary.dd)
 77866>>>>>Use DataDict.pkg
 77866>>>>>
 77866>>>>>Open FuvarlevelTetel
@@ -4008,7 +4008,7 @@ Including file: cFuvarlevelTetelDataDictionary.dd    (C:\Users\markm\OneDrive\Do
 78070>>>
 78070>>>End_Object 
 78071>        Use FuvarlevelTetelEntry.vw
-Including file: FuvarlevelTetelEntry.vw    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\FuvarlevelTetelEntry.vw)
+Including file: FuvarlevelTetelEntry.vw    (C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\FuvarlevelTetelEntry.vw)
 78071>>>// C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\FuvarlevelTetelEntry.vw
 78071>>>// Fuvarlev‚l t‚tel
 78071>>>//
@@ -4091,7 +4091,7 @@ Including file: FuvarlevelTetelEntry.vw    (C:\Users\markm\OneDrive\Dokumentumok
 78141>>>
 78141>>>End_Object 
 78142>        Use SoforReport.rv
-Including file: SoforReport.rv    (C:\Users\markm\OneDrive\Dokumentumok\GitHub\DataFlex_FF_2017\AppSrc\SoforReport.rv)
+Including file: SoforReport.rv    (C:\DataFlex Projects\DataFlex_FF_2017\AppSrc\SoforReport.rv)
 78142>>>// SoforReport.rv
 78142>>>// SoforReport
 78142>>>Register_Object oReport
@@ -7213,7 +7213,7 @@ Including file: cWinControlEx.pkg    (C:\Program Files (x86)\DataFlex 18.2\Pkg\c
 80131>>>Object oSoforReport7 is a ReportView
 80133>>>    Set Location to 6 6
 80134>>>    Set Size to 100 202
-80135>>>    Set Label To "SoforReport7"
+80135>>>    Set Label to "Sof‹r jelent‚s"
 80136>>>
 80136>>>
 80136>>>    Object oSofor_DD is a cSoforDataDictionary
@@ -7358,7 +7358,7 @@ Including file: cWinControlEx.pkg    (C:\Program Files (x86)\DataFlex 18.2\Pkg\c
 80278>>>
 80278>>>    Object oReport is a cWinReport2
 80280>>>
-80280>>>        Set Report_Title to "SoforReport7"
+80280>>>        Set Report_Title to "Sof‹r jelent‚s"
 80281>>>
 80281>>>        // Set DDO, Index and breaks for the report
 80281>>>        Set Server to oFuvarlevel_DD
@@ -7694,7 +7694,7 @@ Including file: cWinControlEx.pkg    (C:\Program Files (x86)\DataFlex 18.2\Pkg\c
 80516>Start_UI
 80517>
 Summary
-Memory Available: 2147483647
+Memory Available: 2147483646
 Total Warnings : 0
 Total Errors   : 0
 Total Symbols  : 45562
@@ -7702,6 +7702,6 @@ Total Resources: 0
 Total Commands : 80516
 Total Windows  : 1
 Total Pages    : 1
-Static Data    : 498793
+Static Data    : 497541
 Message area   : 560646
-Total Blocks   : 28894
+Total Blocks   : 28877

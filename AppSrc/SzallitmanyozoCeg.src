@@ -93,8 +93,8 @@ Object oMain is a Panel
                 Set psDescription to "Available Views"
 
                 Object oAutoEntryMenuItem is a cCJMenuItem
-                    Set psCaption to "AutoEntry"
-                    Set psTooltip to "AutoEntry"
+                    Set psCaption to "G‚pkocsi"
+                    Set psTooltip to "G‚pkocsi"
                 
                     Procedure OnExecute Variant vCommandBarControl
                         Handle hoClient
@@ -104,8 +104,8 @@ Object oMain is a Panel
                 End_Object
 
                 Object oSoforEntryMenuItem is a cCJMenuItem
-                    Set psCaption to "SoforEntry"
-                    Set psTooltip to "SoforEntry"
+                    Set psCaption to "Sof‹r"
+                    Set psTooltip to "Sof‹r"
                 
                     Procedure OnExecute Variant vCommandBarControl
                         Handle hoClient
@@ -155,8 +155,8 @@ Object oMain is a Panel
                 Set psDescription to "Available Reports"
 
                 Object oSoforReport7MenuItem is a cCJMenuItem
-                    Set psCaption to "SoforReport7"
-                    Set psTooltip to "SoforReport7"
+                    Set psCaption to "Sof‹r jelent‚s"
+                    Set psTooltip to "Sof‹r jelent‚s"
                 
                     Procedure OnExecute Variant vCommandBarControl
                         Handle hoClient
